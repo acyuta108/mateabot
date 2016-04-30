@@ -23,7 +23,7 @@ controller.setupWebserver(port, function (err, webserver) {
 })
 
 controller.hears(['hello', 'hi'], 'message_received', function (bot, message) {
-  bot.reply(message, 'Namaste! Sure let\'s check the schedule for you..)
+  bot.reply(message, 'Namaste! Sure let\'s check the schedule for you..')
   bot.reply(message, {
     attachment: {
       type: 'template',
